@@ -19,6 +19,8 @@ public class ScoreRanking {
 		}
 //			i=0, 80<80, 80<90, 80<74, 80<100, 80<50 count = 3		
 //			i=1, 90<80, 90<90, 90<84, 90<100, 90<50 count = 2
+//			i=2, 74<80, 74<90, 74<74, 74<100, 74<50 count = 4	
+//			i=3, 100<80, 100<90, 100<74, 100<100<, 100<50 count = 1
 		for(int i = 0; i < rank.length; i++) {
 			System.out.println(rank[i] + " ");
 		}

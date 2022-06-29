@@ -4,7 +4,7 @@ public class ScoreRanking {
 
 	public static void main(String[] args) {
 		// 순위 매기기
-		int[] score = {80, 90, 74, 100, 50};
+		int[] score = {80, 91, 74, 100, 50};
 		int[] rank = new int[5];
 
 		for(int i = 0; i < score.length; i++) {

@@ -9,9 +9,9 @@ public class Student2 {
 		seriaNum++;
 		id = seriaNum;
 	}
-	
-	public int getId() {
-		return id;
+	//ID를 설정하는 메서드
+	public int setId(int id) {
+		this.id = id;
 	}
 	
 	//이름을 설정하는 메서드

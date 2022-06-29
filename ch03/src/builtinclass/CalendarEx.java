@@ -21,8 +21,11 @@ public class CalendarEx {
 		//요일 -
 		int day = cal.get(Calendar.DAY_OF_WEEK);
 		
+		long time = cal.getTimeInMillis();
+		
 		System.out.println(year + "년 " + month + "월 " + date + "일");
 		System.out.println(hour + "시 " + minute + "분 " + second + "초");
 		System.out.println(day); //1-일, 2-월, 3-화... 6-토
+		System.out.println(time);
 	}
 }

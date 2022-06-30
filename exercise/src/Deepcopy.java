@@ -1,0 +1,36 @@
+import arryobject.Book;
+
+public class Deepcopy {
+
+	public static void main(String[] args) {
+		
+		Book[] array1 = new Book[3];
+		Book[] array2 = new Book[3];
+		
+		//array1의 데이터
+		array1[0] = new Book("혼공 자바", "신용권");
+		array1[1] = new Book("반응형 웹", "나잘나");
+		array1[2] = new Book("스프링부트", "아무나");
+		
+		//array2의 데이터는 기본생성자로 생성
+		array2[0] = new Book();
+		array2[1] = new Book();
+		array2[2] = new Book();
+		
+		//array1의 요소를 array2에 복사
+		for(int i = 0; i <array1.length; i++) {
+			array2[i].setBookName(array1[i].getBookName());
+		}
+		//array1 수정
+		//arraycopy() 사용
+		System.arraycopy(array1, 0, array2, 0, 3);
+	
+		
+		 //출력
+		 for(int i=0; i<array2.length; i++) {
+				array2[i].showInfo();
+				}
+		
+	}
+
+}

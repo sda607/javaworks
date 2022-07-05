@@ -1,0 +1,26 @@
+package interfaceex.remotecontrol;
+
+public class MyClass {
+	//필드
+	RemoteControl rc = new Television();
+	
+	//기본 생성자
+	public MyClass() {}
+	//생성자의 매개 변수
+	public MyClass(RemoteControl rc) {
+		this.rc = rc;
+		rc.turnOn();
+		rc.setVolume(5);
+	}
+	//지역변수
+	void methodA() {
+		RemoteControl rc = new Television();
+		rc.turnOn();
+		rc.setVolume(5);
+	}
+	// 매개변수
+	void methodB(RemoteControl rc) {
+		rc.turnOn();
+		rc.setVolume(5);
+	}
+}

@@ -24,4 +24,9 @@ public class CustomerTest2 {
 
 	}
 
+	private static int calcPrice(int price) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
 }

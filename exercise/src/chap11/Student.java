@@ -9,7 +9,12 @@ public class Student {
 		public String getStudentNum() {
 			return studentNum;
 		}
-																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																
+		@Override
+		public boolean equals(Object obj) {
+			if(obj instanceof Student) {
+				Student student = (Student) obj;
+			}
+		}
 	}
 
 
